@@ -1,0 +1,140 @@
+.slide__form-two {
+    padding: 10% 0;
+    background: url('../images/dist/back-graund-form-two.png') 0 0/100% 100% no-repeat;
+
+    h2 {
+        color: #ffffff;
+        font-size: 36px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    p {
+        line-height: 37px;
+    }
+}
+
+.form-two__wrapper {
+    display: flex;
+}
+
+.form-two__container {
+    margin-left: 8%;
+    width: 43%;
+}
+
+.form-two__content {
+    width: 36%;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fcda20;
+
+    p {
+        line-height: 24px;
+    }
+}
+
+.form-two__elem {
+    margin-top: 3%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 6%;
+
+    li {
+        list-style-type: disc;
+        font-size: 20px;
+        line-height: 24px;
+        color: #ffffff;
+    }
+
+    li::marker {
+        color: $accent;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .slide__form-two {
+        background: none;
+
+        h2 {
+            color: $textcolor;
+            font-size: 33px;
+        }
+    }
+
+    .form-two__wrapper {
+        margin: 6% 0;
+        flex-direction: column;
+    }
+
+    .form-two__container {
+        display: none;
+    }
+
+    .form-two__content {
+        margin: 0 auto;
+        width: 85%;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .form-two__elem {
+        li {
+            margin: 2% 0;
+            color: $textcolor;
+        }
+
+    }
+}
+
+@media (max-width: 576px) {
+    // .slide__form-two {
+    //     background: none;
+
+    //     h2 {
+    //         color: $textcolor;
+    //         font-size: 33px;
+    //     }
+    // }
+
+    // .form-two__wrapper {
+    //     margin: 6% 0;
+    //     flex-direction: column;
+    // }
+
+    // .form-two__container {
+    //     display: none;
+    // }
+
+    // .form-two__content {
+    //     margin: 0 auto;
+    //     width: 85%;
+
+    //     p {
+    //         text-align: center;
+    //     }
+    // }
+
+    // .form-two__elem {
+    //     li {
+    //         margin: 2% 0;
+    //         color: $textcolor;
+    //     }
+
+    // }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 1200px) {}
+
+@media (min-width: 1400px) {}

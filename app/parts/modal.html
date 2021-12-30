@@ -1,0 +1,30 @@
+<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+      <header class="modal__header">
+        <h2 class="modal__title" id="modal-1-title">Определение цены</h2>
+        <p>работы за ремонт</p>
+      </header>
+      <form action="#">
+        <main class="modal__content">
+          <input class="form-input modal__input" type="text" placeholder="Ваше имя">
+          <input class="form-input modal__input" type="text" placeholder="Телефон">
+          <textarea class="form-input modal__input" type="text" placeholder="Текст сообщения"></textarea>
+        </main>
+        <footer class="modal__footer">
+          <button data-micromodal-close data-micromodal-open="modal-2" class="btn">Отправить</button>
+          <div class="form__radion">
+            <div class="radion">
+              <input class="radio__input" type="radio" id="radio_5">
+              <label class="radio__lable" for="radio_5">
+                Я согласен на обработку данных <br>
+                <p>Политика конфиденциальности</p>
+              </label>
+            </div>
+          </div>
+        </footer>
+      </form>
+    </div>
+    <button data-micromodal-close class="modal__close" aria-label="Закрыть окно"></button>
+  </div>
+</div>

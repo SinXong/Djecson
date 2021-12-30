@@ -1,0 +1,443 @@
+.slide__start {
+    position: relative;
+    background: url(../images/dist/back-graund-main.png) 0 0/100% no-repeat;
+}
+
+.img__house {
+    width: 100%;
+    position: absolute;
+    height: 85%;
+    background: url(../images/dist/house.png) 90% 0/auto 100% no-repeat;
+}
+
+.start__container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+
+    .container__left {
+        width: 50%;
+    }
+
+    .container__right {
+        width: 50%;
+    }
+}
+
+.start__text {
+    p {
+        padding: 2% 0;
+        font-size: 22px;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 66px;
+    }
+
+    span {
+        font-size: 28px;
+    }
+}
+
+.start__card {
+    display: flex;
+    justify-content: space-between;
+    margin: 4% 0;
+
+    .card {
+        display: flex;
+        align-items: center;
+        width: 45%;
+        height: 89px;
+        background-color: #ffffff;
+        box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.15);
+
+        img {
+            margin: 0 8%;
+        }
+
+        p {
+            line-height: 20px;
+        }
+    }
+}
+
+.start__btn {
+    margin-top: 6%;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+        width: 45%;
+        height: 54px;
+    }
+}
+
+.start__form {
+    padding-top: 15%;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-left: 36%;
+    margin-top: 3%;
+    width: 60%;
+    height: 692px;
+    background: url('../images/dist/back-graund-list.png') 0 0/100% 100% no-repeat;
+
+    span {
+        display: block;
+        text-align: center;
+        font-size: 27px;
+        text-transform: uppercase;
+        color: $accent;
+    }
+
+    p {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    form {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input {
+            padding: 0 5%;
+            margin: 3% 0;
+            width: 80%;
+            height: 38px;
+            background-color: #f8f8f8;
+            border: 1px solid #cacaca;
+            border-radius: 22px;
+        }
+
+        textarea {
+            resize: none;
+            font-family: 'Myriad-Pro';
+            font-size: 15px;
+            padding-top: 4%;
+            padding-left: 5%;
+            padding-right: 5%;
+            margin: 3% 0;
+            width: 80%;
+            height: 94px;
+            background-color: #f8f8f8;
+            border: 1px solid #cacaca;
+            border-radius: 20px;
+        }
+
+        button {
+            margin: 5% 0;
+            font-size: 20px;
+            width: 80%;
+            height: 55px;
+        }
+    }
+}
+
+.radion {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.radio__input {
+    appearance: none;
+    position: absolute;
+}
+
+.radio__lable {
+    font-size: 14px;
+    color: #444;
+    cursor: pointer;
+
+    p {
+        font-size: 14px;
+        text-decoration: underline;
+        color: $accent;
+    }
+
+    &:before {
+        content: '';
+        display: block;
+        width: 14px;
+        height: 14px;
+        border: 1px solid #444;
+        background-color: #ffffff;
+        border-radius: 50%;
+        position: absolute;
+        top: 2px;
+        left: 24px;
+        z-index: 2;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        width: 8px;
+        height: 8px;
+        background-color: $accent;
+        border-radius: 50%;
+        opacity: 0;
+        position: absolute;
+        top: 6px;
+        left: 28px;
+        z-index: 3;
+    }
+}
+
+.radio__input:checked+.radio__lable:before {
+    border-color: $accent;
+}
+
+.radio__input:checked+.radio__lable:after {
+    opacity: 1;
+}
+
+.img__house_second {
+    top: 60%;
+    position: absolute;
+    width: 35%;
+    height: 68%;
+    background: url(../images/dist/back-graund-house2.png) 0 0/100% 100% no-repeat;
+}
+
+@media (max-width: 320px) {
+    .slide__start {
+        background: none;
+        width: 100%;
+    }
+
+    .img__house {
+        display: none;
+    }
+
+    .img__house_second {
+        display: none;
+    }
+
+    .start__container {
+        flex-direction: column;
+
+        .container__left {
+            width: 100%;
+        }
+
+        .container__right {
+            margin: 5% 0;
+            width: 100%;
+        }
+    }
+
+    .start__text {
+        p {
+            padding: 5% 0;
+            text-align: center;
+            line-height: 25px;
+        }
+
+        h1 {
+            font-size: 48px;
+            text-align: center;
+            line-height: 50px;
+            font-weight: 400;
+        }
+
+        span {
+            display: inline-block;
+            padding: 5% 0;
+            line-height: 25px;
+            text-align: center;
+        }
+    }
+
+    .start__card {
+        flex-direction: column;
+        margin: 0;
+
+        .card {
+            justify-content: center;
+            margin: 3% auto;
+            width: 85%;
+
+            p {
+                width: 100%;
+            }
+        }
+    }
+
+    .start__btn {
+        margin: 0;
+        flex-direction: column;
+
+        button {
+            margin: 3% auto;
+            width: 80%;
+        }
+    }
+
+    .start__form {
+        margin: 0 auto;
+        width: 95%;
+        padding: 35% 0;
+    }
+
+    .radio__lable::before {
+        left: 10%;
+    }
+
+    .radio__lable::after {
+        left: 11.3%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width:576px) {
+    .slide__start {
+        background: none;
+        width: 100%;
+    }
+
+    .img__house {
+        display: none;
+    }
+
+    .img__house_second {
+        display: none;
+    }
+
+    .start__container {
+        flex-direction: column;
+
+        .container__left {
+            width: 100%;
+        }
+
+        .container__right {
+            margin: 5% 0;
+            width: 100%;
+        }
+    }
+
+    .start__text {
+        p {
+            padding: 5% 0;
+            text-align: center;
+            line-height: 25px;
+        }
+
+        h1 {
+            font-size: 48px;
+            text-align: center;
+            line-height: 50px;
+            font-weight: 400;
+        }
+
+        span {
+            display: inline-block;
+            width: 100%;
+            padding: 5% 0;
+            line-height: 25px;
+            text-align: center;
+        }
+    }
+
+    .start__card {
+        flex-direction: column;
+        margin: 0;
+
+        .card {
+            justify-content: center;
+            margin: 3% auto;
+            width: 85%;
+
+            p {
+                width: 100%;
+            }
+        }
+    }
+
+    .start__btn {
+        margin: 0;
+        flex-direction: column;
+
+        button {
+            margin: 3% auto;
+            width: 80%;
+        }
+    }
+
+    .start__form {
+        margin: 0 auto;
+        width: 95%;
+        padding: 35% 0;
+    }
+
+    .radio__lable::before {
+        left: 10%;
+    }
+
+    .radio__lable::after {
+        left: 11.3%;
+    }
+}
+
+// @media screen and (min-width: 401px) and (max-width: 576px) {
+//     .slide__start {
+//         background: none;
+//     }
+//     .img__house {
+//         display: none;
+//     }
+//     .start__container {
+//         flex-direction: column;
+
+//         .container__left {
+//             width: 100%;
+//         }
+
+//         .container__right {
+//             margin: 12% 0;
+//             width: 100%;
+//         }
+//     }
+//     .start__text {
+//         p {
+//             padding: 4.5% 0;
+//             text-align: center;
+//         }
+
+//         h1 {
+//             text-align: center;
+//         }
+
+//         span {
+//             padding: 4.5% 0;
+//             display: inline-block;
+//             text-align: center;
+//             width: 100%;
+//         }
+//     }
+//     .start__card {
+//         justify-content: space-around;
+//     }
+//     .start__btn {
+//         justify-content: space-around;
+//     }
+//     .start__form {
+//         margin: 0 auto;
+//     }
+// }
+
+@media (max-width: 576px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 1200px) {}
+
+@media (min-width: 1400px) {}

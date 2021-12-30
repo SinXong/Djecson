@@ -1,0 +1,67 @@
+// USER VARIABLES SECTION
+
+$accent: #1490d2 // Accent Color
+$fontsize: 16px // Body Font Size
+$textcolor: #333333 // Text Color
+$lineheight: 1.65 // Document Line Height
+$userfont: Myriad-Pro, sans-serif // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+$bg-red: rgb(214, 24, 24)
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px
+$gutter: $grid-gutter-width
+
+// IMPORT SECTION
+
+// @import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+// @import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/_utilities.scss' // Optional Bootstrap Utilites
+@import 'node_modules/swiper/swiper-bundle'
+@import 'app/vendor/micromodal'
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+
+@include font('Myriad-Pro', light, 300, '../fonts/MyriadPro-Light.woff2')
+@include font('Myriad-Pro', italic, 300, '../fonts/MyriadPro-LightItalic.woff2')
+@include font('Myriad-Pro', normal, 400, '../fonts/MyriadPro-Regular.woff2')
+@include font('Myriad-Pro', italic, 400, '../fonts/MyriadPro-RegularItalic.woff2')
+@include font('Myriad-Pro', semi-bold, 600, '../fonts/MyriadPro-Semibold.woff2')
+@include font('Myriad-Pro', italic, 600, '../fonts/MyriadPro-SemiboldItalic.woff2')
+@include font('Myriad-Pro', bold, 700, '../fonts/MyriadPro-Bold.woff2')
+@include font('Myriad-Pro', italic, 700, '../fonts/MyriadPro-BoldItalic.woff2')
+@include font('Myriad-Pro', black, 900, '../fonts/MyriadPro-Black.woff2')
+@include font('Myriad-Pro', italic, 900, '../fonts/MyriadPro-BlackItalic.woff2')
+
+// GENERAL CSS SETTINGS
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-family: $userfont
+	font-size: $fontsize
+	line-height: $lineheight
+	color: $textcolor
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
