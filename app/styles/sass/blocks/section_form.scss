@@ -217,33 +217,35 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            .form__radion{
-                .radion{
+
+            .form__radion {
+                .radion {
                     margin-right: 5%;
+
                     .radio__lable {
                         color: $textcolor;
                         font-size: 13px;
                         margin-left: 0;
                     }
-            
+
                     .radio__lable::before {
                         top: 0;
                         left: 2%;
                     }
-            
+
                     .radio__lable::after {
                         top: 8%;
                         left: 3.8%;
                     }
 
-                    p{
+                    p {
                         font-size: 13px;
                     }
                 }
             }
         }
 
-        
+
 
         input {
             background-color: rgba(134, 173, 197, .7);
@@ -271,91 +273,712 @@
     }
 }
 
-@media (max-width: 576px) {
-    // .slide__form {
-    //     background: none;
-    //     height: 580px;
-    // }
+@media screen and (min-width: 321px) and (max-width: 350px) {
+    .slide__form {
+        background: none;
+        height: 580px;
+    }
 
-    // .form__right {
-    //     display: none;
-    // }
+    .form__right {
+        display: none;
+    }
 
-    // .left__container {
-    //     margin: 0 auto;
-    //     padding: 0;
-    //     width: 80%;
+    .left__container {
+        margin: 0 auto;
+        padding: 0;
+        width: 80%;
 
-    //     h2 {
-    //         margin: 6% 0;
-    //         text-align: center;
-    //         font-size: 36px;
-    //         color: $textcolor;
-    //         line-height: 40px;
-    //     }
+        h2 {
+            margin: 6% 0;
+            text-align: center;
+            font-size: 36px;
+            color: $textcolor;
+            line-height: 40px;
+        }
 
-    //     p {
-    //         text-align: center;
-    //         color: $textcolor;
-    //     }
+        p {
+            text-align: center;
+            color: $textcolor;
+        }
 
-    //     .radion {
-    //         margin: 5% 0;
-    //         justify-content: flex-end;
-    //     }
+        .radion {
+            margin: 5% 0;
+            justify-content: flex-end;
+        }
 
-    //     .left__form {
-    //         border-radius: 25px;
-    //         box-shadow: 0 6px 22px 2px rgb(0 0 0 / 10%);
-    //         display: flex;
-    //         flex-direction: column;
-    //         align-items: center;
-    //     }
+        .left__form {
+            border-radius: 25px;
+            box-shadow: 0 6px 22px 2px rgb(0 0 0 / 10%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
-    //     .radio__lable {
-    //         color: $textcolor;
-    //     }
+            .form__radion {
+                .radion {
+                    margin-right: 5%;
 
-    //     .radio__lable::before {
-    //         top: 0;
-    //         left: 2%;
-    //     }
+                    .radio__lable {
+                        color: $textcolor;
+                        font-size: 13px;
+                        margin-left: 0;
+                    }
 
-    //     .radio__lable::after {
-    //         top: 8%;
-    //         left: 3.8%;
-    //     }
+                    .radio__lable::before {
+                        top: 0;
+                        left: 2%;
+                    }
 
-    //     input {
-    //         background-color: rgba(134, 173, 197, .7);
-    //         margin: 5% 0;
-    //         width: 90%;
-    //     }
+                    .radio__lable::after {
+                        top: 8%;
+                        left: 3.8%;
+                    }
 
-    //     input:nth-child(2) {
-    //         margin: 0;
-    //     }
+                    p {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
 
-    //     textarea {
-    //         background-color: rgba(134, 173, 197, .7);
-    //         width: 90%;
-    //     }
 
-    //     button {
-    //         margin: 4% 0;
-    //         width: 90%;
-    //     }
-    // }
 
-    // .point {
-    //     display: none;
-    // }
+        input {
+            background-color: rgba(134, 173, 197, .7);
+            margin: 5% 0;
+            width: 90%;
+        }
+
+        input:nth-child(2) {
+            margin: 0;
+        }
+
+        textarea {
+            background-color: rgba(134, 173, 197, .7);
+            width: 90%;
+        }
+
+        button {
+            margin: 4% 0;
+            width: 90%;
+        }
+    }
+
+    .point {
+        display: none;
+    }
 }
 
-@media (max-width: 768px) {}
+@media screen and (min-width: 350px) and (max-width: 400px) {
+    .slide__form {
+        background: none;
+        height: 580px;
+    }
 
-@media (max-width: 992px) {}
+    .form__right {
+        display: none;
+    }
 
-@media (max-width: 1200px) {}
+    .left__container {
+        margin: 0 auto;
+        padding: 0;
+        width: 80%;
 
-@media (min-width: 1400px) {}
+        h2 {
+            margin: 6% 0;
+            text-align: center;
+            font-size: 36px;
+            color: $textcolor;
+            line-height: 40px;
+        }
+
+        p {
+            text-align: center;
+            color: $textcolor;
+        }
+
+        .radion {
+            margin: 5% 0;
+            justify-content: center;
+        }
+
+        .left__form {
+            border-radius: 25px;
+            box-shadow: 0 6px 22px 2px rgb(0 0 0 / 10%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .form__radion {
+                .radion {
+                    margin-right: 5%;
+
+                    .radio__lable {
+                        color: $textcolor;
+                        font-size: 13px;
+                        margin-left: 0;
+                    }
+
+                    .radio__lable::before {
+                        top: 0;
+                        left: 2%;
+                    }
+
+                    .radio__lable::after {
+                        top: 8%;
+                        left: 3.7%;
+                    }
+
+                    p {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+
+
+
+        input {
+            background-color: rgba(134, 173, 197, .7);
+            margin: 5% 0;
+            width: 90%;
+        }
+
+        input:nth-child(2) {
+            margin: 0;
+        }
+
+        textarea {
+            background-color: rgba(134, 173, 197, .7);
+            width: 90%;
+        }
+
+        button {
+            margin: 4% 0;
+            width: 90%;
+        }
+    }
+
+    .point {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 576px) {
+    .slide__form {
+        background: none;
+        height: 580px;
+    }
+
+    .form__right {
+        display: none;
+    }
+
+    .left__container {
+        margin: 0 auto;
+        padding: 0;
+        width: 80%;
+
+        h2 {
+            margin: 6% 0;
+            text-align: center;
+            font-size: 36px;
+            color: $textcolor;
+            line-height: 40px;
+        }
+
+        p {
+            text-align: center;
+            color: $textcolor;
+        }
+
+        .radion {
+            margin: 5% 0;
+            justify-content: center;
+        }
+
+        .left__form {
+            border-radius: 25px;
+            margin: 0 auto;
+            width: 80%;
+            box-shadow: 0 6px 22px 2px rgb(0 0 0 / 10%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .form__radion {
+                .radion {
+                    margin-right: 5%;
+
+                    .radio__lable {
+                        color: $textcolor;
+                        font-size: 13px;
+                        margin-left: 0;
+                    }
+
+                    .radio__lable::before {
+                        top: 0;
+                        left: 2%;
+                    }
+
+                    .radio__lable::after {
+                        top: 8%;
+                        left: 3.6%;
+                    }
+
+                    p {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+
+
+
+        input {
+            background-color: rgba(134, 173, 197, .7);
+            margin: 5% 0;
+            width: 90%;
+        }
+
+        input:nth-child(2) {
+            margin: 0;
+        }
+
+        textarea {
+            background-color: rgba(134, 173, 197, .7);
+            width: 90%;
+        }
+
+        button {
+            margin: 4% 0;
+            width: 90%;
+        }
+    }
+
+    .point {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .slide__form {
+        background: none;
+        height: 580px;
+    }
+
+    .form__right {
+        display: none;
+    }
+
+    .left__container {
+        margin: 0 auto;
+        padding: 0;
+        width: 80%;
+
+        h2 {
+            margin: 6% 0;
+            text-align: center;
+            font-size: 36px;
+            color: $textcolor;
+            line-height: 40px;
+        }
+
+        p {
+            text-align: center;
+            color: $textcolor;
+        }
+
+        .radion {
+            margin: 5% 0;
+            justify-content: center;
+        }
+
+        .left__form {
+            border-radius: 25px;
+            margin: 0 auto;
+            width: 65%;
+            box-shadow: 0 6px 22px 2px rgb(0 0 0 / 10%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .form__radion {
+                .radion {
+                    margin-right: 5%;
+
+                    .radio__lable {
+                        color: $textcolor;
+                        font-size: 13px;
+                        margin-left: 0;
+                    }
+
+                    .radio__lable::before {
+                        top: 0;
+                        left: 2%;
+                    }
+
+                    .radio__lable::after {
+                        top: 8%;
+                        left: 3.6%;
+                    }
+
+                    p {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+
+
+
+        input {
+            background-color: rgba(134, 173, 197, .7);
+            margin: 5% 0;
+            width: 90%;
+        }
+
+        input:nth-child(2) {
+            margin: 0;
+        }
+
+        textarea {
+            background-color: rgba(134, 173, 197, .7);
+            width: 90%;
+        }
+
+        button {
+            margin: 4% 0;
+            width: 90%;
+        }
+    }
+
+    .left__point {
+        justify-content: center;
+    }
+
+    .point {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .slide__form {
+        background: none;
+        height: 580px;
+    }
+
+    .form__right {
+        display: none;
+    }
+
+    .left__container {
+        margin: 0 auto;
+        padding: 0;
+        width: 80%;
+
+        h2 {
+            margin: 6% 0;
+            text-align: center;
+            font-size: 36px;
+            color: $textcolor;
+            line-height: 40px;
+        }
+
+        p {
+            text-align: center;
+            color: $textcolor;
+        }
+
+        .radion {
+            margin: 5% 0;
+            justify-content: center;
+        }
+
+        .left__form {
+            border-radius: 25px;
+            margin: 0 auto;
+            width: 55%;
+            box-shadow: 0 6px 22px 2px rgb(0 0 0 / 10%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .form__radion {
+                .radion {
+                    margin-right: 5%;
+
+                    .radio__lable {
+                        color: $textcolor;
+                        font-size: 13px;
+                        margin-left: 0;
+                    }
+
+                    .radio__lable::before {
+                        top: 0;
+                        left: 2%;
+                    }
+
+                    .radio__lable::after {
+                        top: 8%;
+                        left: 3.35%;
+                    }
+
+                    p {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+
+
+
+        input {
+            background-color: rgba(134, 173, 197, .7);
+            margin: 5% 0;
+            width: 90%;
+        }
+
+        input:nth-child(2) {
+            margin: 0;
+        }
+
+        textarea {
+            background-color: rgba(134, 173, 197, .7);
+            width: 90%;
+        }
+
+        button {
+            margin: 4% 0;
+            width: 90%;
+        }
+    }
+
+    .left__point {
+        justify-content: center;
+    }
+
+    .point {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .slide__form {
+        background: none;
+        height: 580px;
+    }
+
+    .form__right {
+        display: none;
+    }
+
+    .left__container {
+        margin: 0 auto;
+        padding: 0;
+        width: 80%;
+
+        h2 {
+            margin: 6% 0;
+            text-align: center;
+            font-size: 36px;
+            color: $textcolor;
+            line-height: 40px;
+        }
+
+        p {
+            text-align: center;
+            color: $textcolor;
+        }
+
+        .radion {
+            margin: 5% 0;
+            justify-content: center;
+        }
+
+        .left__form {
+            border-radius: 25px;
+            margin: 0 auto;
+            width: 45%;
+            box-shadow: 0 6px 22px 2px rgb(0 0 0 / 10%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .form__radion {
+                .radion {
+                    margin-right: 5%;
+
+                    .radio__lable {
+                        color: $textcolor;
+                        font-size: 13px;
+                        margin-left: 0;
+                    }
+
+                    .radio__lable::before {
+                        top: 0;
+                        left: 2%;
+                    }
+
+                    .radio__lable::after {
+                        top: 8%;
+                        left: 3.20%;
+                    }
+
+                    p {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+
+
+
+        input {
+            background-color: rgba(134, 173, 197, .7);
+            margin: 5% 0;
+            width: 90%;
+        }
+
+        input:nth-child(2) {
+            margin: 0;
+        }
+
+        textarea {
+            background-color: rgba(134, 173, 197, .7);
+            width: 90%;
+        }
+
+        button {
+            margin: 4% 0;
+            width: 90%;
+        }
+    }
+
+    .left__point {
+        justify-content: center;
+    }
+
+    .point {
+        margin-right: 3%;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1300px) {
+    .left__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input {
+            width: 88%;
+        }
+
+        input:nth-child(2) {
+            margin-left: 0;
+            margin-top: 4%;
+        }
+
+        button {
+            margin: 0 0;
+        }
+    }
+
+    .form__radion {
+        margin-top: 3%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .radion {
+        margin: 2% 0;
+        justify-content: center;
+
+        .radio__lable::before {
+            top: 0;
+            left: -15%;
+        }
+
+        .radio__lable::after {
+            top: 8%;
+            left: -13%;
+        }
+    }
+
+    .left__point {
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+    .right__container {
+        img {
+            margin-top: 14.5%;
+        }
+
+        .text__wrapper {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1301px) and (max-width: 1400px) {
+    .left__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input {
+            width: 88%;
+        }
+
+        input:nth-child(2) {
+            margin-left: 0;
+            margin-top: 4%;
+        }
+
+        button {
+            margin: 0 0;
+        }
+    }
+
+    .form__radion {
+        margin-top: 3%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .radion {
+        margin: 2% 0;
+        justify-content: center;
+
+        .radio__lable::before {
+            top: 0;
+            left: -15%;
+        }
+
+        .radio__lable::after {
+            top: 8%;
+            left: -13%;
+        }
+    }
+
+    .left__point {
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+    .right__container {
+        img {
+            margin-top: 13%;
+        }
+
+        .text__wrapper {
+            display: none;
+        }
+    }
+
+    .left__container {
+        padding-top: 9%;
+    }
+}
